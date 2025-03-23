@@ -93,52 +93,131 @@
     transform: scale(1.12);
     transition: 0.5s;
 }
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
+
+/* For large screens (desktops and above 1200px) */
+@media (min-width: 1200px) {
+    .about {
+        max-width: 1200px;
+        margin: 80px auto;
     }
-    .about-title h1{
-        font-size: 50px;
-        padding: 0;
+    .about-title h1 {
+        font-size: 90px;
     }
-    .about-title img{
-        width: 130px;
-        right: -20px;
+}
+
+/* For tablets (between 768px and 1024px) */
+@media (max-width: 1024px) {
+    .about {
+        margin: 60px 50px;
+        gap: 60px;
     }
-    .about-sections{
-        flex-direction: column;
+    .about-title h1 {
+        font-size: 65px;
     }
-    .about-left{
-        display: none;
+    .about-sections {
+        gap: 50px;
     }
-    .about-para{
-        font-size: 18px;
-        line-height: 32px;
+    .about-skill p {
+        font-size: 22px;
     }
-    .about-skill{
-        gap: 20px;
-        align-items: center;
-    }
-    .about-skill p{
-        font-size: 20px;
-    }
-    .about-skill hr{
+    .about-skill hr {
+        width: 60%;
         height: 6px;
     }
-    .about-achievements{
-        justify-content: space-between;
+    .about-achievements {
+        flex-wrap: wrap;
+        gap: 40px;
     }
-    .about-achievement{
+    .about-achievement h1 {
+        font-size: 40px;
+    }
+    .about-achievement p {
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+    .about {
+        margin: 50px 30px;
+        gap: 50px;
+        align-items: flex-start;
+    }
+    .about-title h1 {
+        font-size: 50px;
+    }
+    .about-title img {
+        width: 100px;
+        right: -10px;
+    }
+    .about-sections {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-left {
+        display: none;
+    }
+    .about-para {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .about-skill {
+        gap: 15px;
+    }
+    .about-skill p {
+        font-size: 18px;
+    }
+    .about-skill hr {
+        height: 5px;
+        width: 70%;
+    }
+    .about-achievements {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .about-achievement h1 {
+        font-size: 30px;
+    }
+    .about-achievement p {
+        font-size: 14px;
+    }
+}
+
+/* For small phones (below 480px) */
+@media (max-width: 480px) {
+    .about {
+        margin: 30px 20px;
+        gap: 40px;
+    }
+    .about-title h1 {
+        font-size: 40px;
+    }
+    .about-title img {
+        width: 80px;
+        right: -5px;
+    }
+    .about-para {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about-skill {
         gap: 10px;
     }
-    .about-achievement h1{
-        font-size: 34px;
-        font-weight: 700;
-    }
-    .about-achievement p{
-        text-align: center;
+    .about-skill p {
         font-size: 16px;
+    }
+    .about-skill hr {
+        height: 4px;
+        width: 80%;
+    }
+    .about-achievements {
+        gap: 20px;
+    }
+    .about-achievement h1 {
+        font-size: 26px;
+    }
+    .about-achievement p {
+        font-size: 12px;
     }
 }

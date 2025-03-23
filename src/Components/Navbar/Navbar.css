@@ -1,3 +1,4 @@
+/* Default Navbar Styles (for large screens) */
 .navbar{
     display: flex;
     align-items: center;
@@ -41,6 +42,8 @@
 .nav-mob-open{
     display: none;
 }
+
+/* Tablets (768px and below) */
 @media(max-width:768px){
     .navbar{
         margin: 20px 50px;
@@ -78,5 +81,45 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+    }
+}
+
+/* Mobile Devices (576px and below) */
+@media(max-width:576px){
+    .navbar{
+        margin: 20px;
+    }
+    .nav-menu{
+        width: 300px;
+        right: -300px;
+    }
+    .nav-mob-close{
+        left: 250px;
+    }
+    .nav-menu li{
+        font-size: 24px;
+        padding-left: 50px;
+    }
+}
+
+/* Small Phones (480px and below) */
+@media(max-width:480px){
+    .nav-menu{
+        width: 250px;
+        right: -250px;
+    }
+    .nav-mob-close{
+        left: 200px;
+    }
+    .nav-menu li{
+        font-size: 20px;
+        padding-left: 30px;
+    }
+}
+
+/* Large Screens (1200px and above) */
+@media(min-width:1200px){
+    .navbar{
+        margin: 20px 200px;
     }
 }
