@@ -108,10 +108,10 @@
     }
     .mywork-title img {
         width: 100px;
-        margin-right: -10px;
+        margin-right: 6px;
     }
     .mywork-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
     .mywork-container img {

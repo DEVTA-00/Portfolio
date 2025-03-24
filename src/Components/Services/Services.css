@@ -121,10 +121,10 @@
     }
     .services-title img {
         width: 100px;
-        margin-right: -10px;
+        margin-right: 6px;
     }
     .services-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
     .services-format {

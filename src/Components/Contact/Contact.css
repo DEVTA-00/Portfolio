@@ -170,7 +170,7 @@
     }
     .contact-title img {
         width: 100px;
-        margin: -5px;
+        margin: 6px;
     }
     .contact-section {
         flex-direction: column;
